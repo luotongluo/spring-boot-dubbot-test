@@ -1,6 +1,9 @@
 package com.lt.dubboprovider.test.service.impl;
+import java.util.Date;
 
 import org.apache.dubbo.config.annotation.DubboService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import test.bean.TestVo;
 import test.service.TestService;
@@ -13,6 +16,7 @@ import test.service.TestService;
 @DubboService
 @Component
 public class TestServiceImpl implements TestService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(TestServiceImpl.class);
     /**
      * getTestVo
      *
@@ -20,6 +24,11 @@ public class TestServiceImpl implements TestService {
      */
     @Override
     public TestVo getTestVo() {
-        return new TestVo();
+        TestVo testVo = new TestVo();
+        testVo.setName("");
+        testVo.setAge(0);
+        testVo.setBirthday(new Date());
+
+        return testVo;
     }
 }

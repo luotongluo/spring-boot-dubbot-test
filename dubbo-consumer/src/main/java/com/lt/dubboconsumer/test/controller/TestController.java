@@ -1,6 +1,7 @@
 package com.lt.dubboconsumer.test.controller;
 
 import com.lt.dubboconsumer.test.service.TestConsuService;
+import common.BaseRet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,12 +18,13 @@ public class TestController {
     private TestConsuService testConsuService;
 
     /**
+     * getTest
      *
      * @return
      */
     @RequestMapping("getTest")
-    public String getTest(){
+    public BaseRet getTest() {
         String testMethod = this.testConsuService.getTestMethod();
-        return testMethod;
+        return new BaseRet(testMethod);
     }
 }
