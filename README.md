@@ -11,3 +11,9 @@ dubbo-provider  dubbo服务提供模块
 启动前需将 comm-dubbo-utils，comm-interface进行mvn deploy
 comm-parent 进行mvn install
 然后就可以启动项目的服务提供和消费模块
+
+### 端口介绍
+dubbo-consumer  3001
+dubbo-provider  2001
+dubbo-provider-manage  2101
+dubbo-provider-query   2102
