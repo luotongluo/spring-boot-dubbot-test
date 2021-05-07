@@ -1,0 +1,27 @@
+1.Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.CuratorFrameworkFactory
+添加下面的依赖
+ <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+ <dependency>
+     <groupId>org.apache.curator</groupId>
+     <artifactId>curator-recipes</artifactId>
+     <version>5.1.0</version>
+ </dependency>
+
+ 2.Caused by: java.lang.IllegalStateException: zookeeper not connected
+添加超时时间限制
+ dubbo.registry.timeout=10000
+
+ 3.If you are using WebLogic you will need to add 'org.slf4j'
+ 没有添加zookeeper依赖之前程序是能够起来的，后来发现是依赖冲突就把zookeeper日志依赖给屏蔽掉就行了
+ <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.6.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+

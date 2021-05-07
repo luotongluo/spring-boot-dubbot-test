@@ -1,0 +1,5 @@
+dubbo高可用: https://www.cnblogs.com/zjfjava/p/9704417.html
+springboot与dubbo整合:https://blog.csdn.net/J080624/article/details/84033579
+
+org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata
+springboot与springcloud版本不兼容 降低版本
