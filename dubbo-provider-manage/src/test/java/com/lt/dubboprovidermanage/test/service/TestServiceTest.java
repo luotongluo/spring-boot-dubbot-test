@@ -27,4 +27,10 @@ public class TestServiceTest {
         List<TestSql> data = this.testService.getData();
         System.out.println(JSON.toJSONString(data));
     }
+    @Test
+    void insertData() {
+        //只回滚了一次插入
+        List<TestSql> data = this.testService.insertData();
+        System.out.println(JSON.toJSONString(data));
+    }
 }
