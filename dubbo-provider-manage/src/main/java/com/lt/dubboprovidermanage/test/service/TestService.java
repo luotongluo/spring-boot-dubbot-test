@@ -25,7 +25,7 @@ public class TestService {
         List<TestSql> testSqls = this.testData1SqlMapper.queryAllByLimit(10, 20);
         List<TestSql> testSqls1 = this.testData2SqlMapper.queryAllByLimit(20, 30);
         testSqls1.addAll(testSqls);
-        List<TestSql> collect = testSqls1.stream().sorted().collect(Collectors.toList());
-        return collect;
+//        List<TestSql> collect = testSqls1.stream().sorted().collect(Collectors.toList());
+        return testSqls1;
     }
 }
