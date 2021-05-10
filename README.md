@@ -6,7 +6,8 @@ comm-interface  dubbo的公共service位置，公共vo，接口请求vo位置
 comm-parent     jar包管理模块
 dubbo-consumer  dubbo的消费模块
 dubbo-provider  dubbo服务提供模块
-
+dubbo-provider-manage 多数据源
+dubbo-provider-query 单数据源
 ### 启动介绍
 启动前需将 comm-dubbo-utils，comm-interface进行mvn deploy
 comm-parent 进行mvn install
