@@ -1,0 +1,6 @@
+mysql中的主备配置：https://www.cnblogs.com/gl-developer/p/6170423.html
+Spring多数据源一主多从读写分离(手写):https://www.cnblogs.com/huangjuncong/p/8576935.html
+使用java Spring实现读写分离（ MySQL实现主从复制）:https://blog.csdn.net/liu976180578/article/details/77684583
+
+http://t.zoukankan.com/qjm201000-p-10362790.html
+spingboot 中通过 DynamicDataSource来动态获取数据源:https://www.jianshu.com/p/b2f818b742a2
