@@ -14,7 +14,9 @@ comm-parent 进行mvn install
 然后就可以启动项目的服务提供和消费模块
 
 ### 端口介绍
+dubbo.protocol.port dubbo在启动的时候回检测该值
+设置端口为 -1 表示 dubbo 自动扫描并使用可用端口（从20880开始递增），避免了端口冲突的问题
 dubbo-consumer  3001
-dubbo-provider  2001
-dubbo-provider-manage  2101
-dubbo-provider-query   2102
+dubbo-provider  2001        dubbo.port=2113
+dubbo-provider-manage  2101    dubbo.port=2111
+dubbo-provider-query   2102     dubbo.port=2112
