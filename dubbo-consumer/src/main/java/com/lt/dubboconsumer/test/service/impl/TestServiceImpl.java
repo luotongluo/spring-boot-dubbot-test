@@ -30,6 +30,7 @@ public class TestServiceImpl implements TestConsuService {
      * @return
      */
 //    @HystrixCommand(fallbackMethod = "reliable")
+    @Override
     public String getTestMethod() {
         TestVo testVo = this.testService.getTestVo();
         LOGGER.info("ret :{}"+JSON.toJSONString(testVo));

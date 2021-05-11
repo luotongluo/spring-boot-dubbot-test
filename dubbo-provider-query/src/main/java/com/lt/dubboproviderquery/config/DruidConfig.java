@@ -48,7 +48,7 @@ public class DruidConfig {
      * @return
      */
     @Bean
-    public FilterRegistrationBean WebStatFilter() {
+    public FilterRegistrationBean webStatFilter() {
         FilterRegistrationBean<Filter> bean = new FilterRegistrationBean<>();
         bean.setFilter(new WebStatFilter());
         HashMap<String, String> initParameters = new HashMap<>();
