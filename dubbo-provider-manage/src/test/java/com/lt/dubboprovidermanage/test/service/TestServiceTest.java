@@ -2,7 +2,6 @@ package com.lt.dubboprovidermanage.test.service;
 
 import com.alibaba.fastjson.JSON;
 import com.lt.dubboprovidermanage.entity.TestSql;
-import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
